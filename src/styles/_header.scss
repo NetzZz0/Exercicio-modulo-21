@@ -1,0 +1,23 @@
+@use'var';
+
+.header {
+    position: sticky;
+    top: 0;
+    top: 0;
+    background-color: lighten(var.$corDeFundo, $amount: 8%);
+    z-index: 1;
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__logo {
+        max-width: 200px;
+        width: 100%;
+        margin: 5px;
+        transition: opacity .5s ease;
+    }
+}

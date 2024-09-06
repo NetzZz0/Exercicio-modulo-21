@@ -1,0 +1,22 @@
+.elenco {
+    padding: 5vw;
+    max-width: 1480px;
+    margin: 0 auto;
+    height: 630px;
+    text-align: center;
+
+    &__list {
+        display: flex;
+
+
+        &__item {
+            padding-top: 24px;
+            display: block;
+
+            img {
+                border: 1px solid #000;
+                border-radius: 6px;
+            }
+        }
+    }
+}

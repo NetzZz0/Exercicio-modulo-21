@@ -1,0 +1,62 @@
+@use 'var';
+@use 'header';
+@use 'watch';
+@use 'about';
+@use 'elenco';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+    color: var.$corText;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize 10px;
+    color: var.$corText;
+}
+
+@mixin title($fontSize: 24px) {
+    @include text($fontSize);
+    color: var.$cor2Text;
+}
+
+.title {
+    @include title;
+}
+
+.text {
+    @include text;
+}
+
+@mixin text--small {
+    @include text(12px)
+}
+
+body {
+    background-color: var.$corDeFundo;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+
+    background-color: var.$corBotao;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid var.$corBotao;
+
+    &:hover {
+        background-color: lighten($color: var.$corBotao, $amount: 3%);
+    }
+}

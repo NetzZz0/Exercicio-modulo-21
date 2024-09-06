@@ -1,0 +1,22 @@
+@use "var";
+
+.watch {
+    padding: 5vw;
+    min-height: 80vh;
+    text-align: center;
+
+    &__content {
+        max-width: 1480px;
+        width: 100%;
+        margin: 0 auto 38px;
+
+        &__combos {
+            width: 100%;
+            margin-left: 421px;
+
+            &__combo {
+                max-width: 640px;
+            }
+        }
+    }
+}
